@@ -438,6 +438,19 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .part02_content {
+    background-image: none;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: relative;
+  }
+  .part02_content .section_2 {
+    padding-bottom: 50px;
+  }
   .tab-content span {
     color: black;
   }
@@ -563,9 +576,6 @@
   }
   .side_bar_right {
     display: none;
-  }
-  .part02_content {
-    background-image: none;
   }
   .section_2 {
     padding: 30px;

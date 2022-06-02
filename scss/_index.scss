@@ -480,6 +480,18 @@ height: 80px;
     display: flex;
     }
    
+    .part02_content {
+background-image: none;
+height: 200px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+   .section_2{
+padding-bottom: 50px;
+   }
+    }
+
+
     .tab-content{
      
        span{
@@ -624,10 +636,7 @@ height: 80px;
     display: none;
   }
  
-  .part02_content {
-    background-image: none;
 
-  }
 
   .section_2{
     padding: 30px;
