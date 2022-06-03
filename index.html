@@ -149,7 +149,7 @@
     -->
    
    
-   
+
    
         <div class="row g-0">
 
@@ -194,7 +194,7 @@
           
     
     
-     <div class="container">   
+     <div class="container-fluid">   
          <div class="row">
             <div class=" col d-none d-md-block d-xl-block">
                 <div class="side_bar_left"> 
@@ -219,7 +219,7 @@
     
    <div class="container-fluid">
     
-        <div class="index  col ">  
+        <div class="index  col-xl ">  
             <div class="side_bar_right col-1 d-md-block d-xl-block " >
                 <ul class="nav flex-column sticky-top">
                     <li class="nav-item">
@@ -298,10 +298,10 @@
   
       </div>
       
-      <div class="container-fluid ">
+      <div class="container-fluid d-none d-md-block d-xl-block">
          
-              <div class="part02_content" >
-                   <div class="part02_img_left d-none d-md-block d-xl-block">
+              <div class="part02_content " >
+                   <div class="part02_img_left ">
                       <div class="tab-content" id="ueberTabA">
                           <div class="tab-pane show active part02_slide_first " id="panel_a_first" role="tabpanel"
                               aria-labelledby="first-tab">
@@ -327,7 +327,7 @@
   
                       <div class="tab-content part_02_img_right" id="slide_01">
                                
-      <div class="part02_button">
+      <div class="part02_button ">
         <ul class="nav part02_dots" id="ueberTab">
   
             <li class="nav-item">
@@ -382,6 +382,71 @@
        
          
       </div>
+
+
+
+      <div class="container-fluid d-block d-md-none d-xl-none">
+         
+        <div class="part02_xs_content" >
+       <div class="tab-content part_02_img_right" id="slide_01">
+                         
+<div class="part02_xs_button d-none d-md-block d-xl-block" >
+  <ul class="nav part02_xs_dots" id="ueberTab">
+
+      <li class="nav-item">
+          <button class="nav-link" id="first-tab" data-bs-slide-to="1" data-bs-target=".first02"
+              data-bs-toggle="tab" role="tab" aria-controls="first" aria-selected="false">
+              <img src="https://i.ibb.co/gTc7Jh2/index-dots.png">
+          </button>
+      </li>
+
+
+      <li class="nav-item">
+          <button class="nav-link active " id="second-tab" data-bs-slide-to="2" data-bs-target=".second02"
+              data-bs-toggle="tab" role="tab" aria-controls="second" aria-selected="true">
+              <img src="https://i.ibb.co/gTc7Jh2/index-dots.png">
+          </button>
+
+      </li>
+
+      <li class="nav-item">
+          <button class="nav-link" id="third-tab" data-bs-slide-to="3" data-bs-target=".third02"
+              data-bs-toggle="tab" role="tab" aria-controls="third" aria-selected="false">
+              <img src="https://i.ibb.co/gTc7Jh2/index-dots.png">
+          </button>
+
+      </li>
+
+  </ul>
+</div>
+       
+                  <div class="tab-pane show active  " id="panel_b_first" role="tabpanel"
+                        aria-labelledby="first-tab">
+                        <img class='section_2 ' src="./img/index_case_01_b.jpg" alt="">
+                    </div>
+
+                    <div class="tab-pane part02_slide_second " id="panel_b_second" role="tabpanel" aria-labelledby="second-tab">
+                        <img class='section_2' src="./img/index_case_xs.jpg" alt="">
+                    </div>
+
+                    <div class="tab-pane  part02_slide_third" id="panel_b_thrid" role="tabpanel" aria-labelledby="third-tab">
+                        <img class='section_2' src="./img/index_case_01_b.jpg" alt="">
+                    </div>
+                
+                </div> 
+
+
+            
+
+    
+</div>
+   
+  
+ 
+   
+</div>
+
+
   
   
       <div class="container-fluid">
@@ -487,12 +552,15 @@
 </div> 
   
   </div> -->
-  
-         
-  
-  
-          </div>
-      </div>
+  <div class="container-fluid">
+
+    <div class="owl-carousel owl-top owl-theme">
+        <div class="item"><img src="./img/index_part03_case01" alt="discovery_pico"></div>
+        <div class="item"><img src="./img/index_part03_case01" alt="3D-eyelid"></div>
+       
+    </div>
+
+    </div>
   
     
    
@@ -599,8 +667,8 @@
     
  
   <div class="container-fluid d-none d-md-block d-xl-block">
-    <div class="row">
-       
+   
+
             <div class=" my-5">
                 <div class="owl-carousel part05_xl owl-theme">
                  
@@ -717,7 +785,7 @@
 
                 </div>
        
-        </div>
+      
     </div>
 
       <div class="container-fluid d-block d-md-none d-xl-none  ">
@@ -839,14 +907,14 @@
         </div>
 
     </div>
-  
+<!--   
       <div class="container-fluid part06">
-          <div class="row">
-              <div class="col col-md col-xl-6 part06_left">
+          <div class="row g-0">
+              <div class="col-12 col-md col-xl-6 part06_left">
                   <img src="./img/index_doctor_01.png" alt="">
               </div>
   
-              <div class="col col-md col-xl-6 part_06_info">
+              <div class="col-12 col-md col-xl part_06_info">
                   <h1>NICE CLINIC 隆乳權威</h1>
                   <div class="doctor_info">
                       <span>廖 國 鈞</span>
@@ -881,7 +949,51 @@
   
               </div>
           </div>
-      </div>
+      </div> -->
+
+
+      <div class="container-fluid part06 d-xl-flex">
+       
+            <div class=" part06_left">
+                <img src="./img/index_doctor_01.png" alt="">
+            </div>
+
+            <div class=" part_06_info">
+                <h1>NICE CLINIC 隆乳權威</h1>
+                <div class="doctor_info">
+                    <span>廖 國 鈞</span>
+                    <p class="doctor">台大整形外科醫師</p>
+                </div>
+                <div class="part06_arrow">
+                    <img src="./img/index_arrow.png">
+
+                    <p class="part06_arrow_design">View</p>
+                </div>
+                <div class="owl-carousel owl-part06 owl-theme"> 
+                    <div class="item">
+                        <div class="doctor_02">
+                            <img src="./img/index_doctor_02.png">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="doctor_03">
+                            <img src="./img/index_doctor_03.png">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="doctor_04">
+                            <img src="./img/index_doctor_04.png">
+
+                        </div>
+                    </div>
+
+
+            </div> 
+        </div>
+    </div>
+
   
       <div class="container-fluid part07_xl d-none d-md-block d-xl-block " >
           <div class="ig_list">
@@ -1542,10 +1654,26 @@
        
            
    
-     </div>
-  
- 
 
+  
+<script>
+    $('.part03_case_slide').owlCarousel({
+        items: 2,
+        dots: false,
+        loop: true,
+        margin:5,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: false,
+        mouseDrag: false
+    });
+    $('.play').on('click', function () {
+        owl.trigger('play.owl.autoplay', [2500])
+    })
+    $('.stop').on('click', function () {
+        owl.trigger('stop.owl.autoplay')
+    })
+</script>
         
       
     
@@ -1565,16 +1693,10 @@
     <script>
         $('.owl-part06').owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 12,
             responsive: {
                 0: {
-                    items: 3
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
+                    items:3
                 }
             }
         })
@@ -1671,10 +1793,10 @@
     center: true,
     items:10,
     loop:true,
-    margin:5,
+    margin:9,
     responsive:{
         600:{
-            items:5
+            items:6
         }
     }
 });</script>

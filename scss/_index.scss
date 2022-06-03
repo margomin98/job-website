@@ -324,24 +324,31 @@ text-align: center;
   background-image: url('/img/index_part06_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: space-evenly;
   position: relative;
+display: flex;
+justify-content:center;
+.part_06_info{
+  text-align: left;
+}
 
-  .part_06_info {
-    align-self: center;
+.owl-part06{
+height: 200px;  
+width: 500px;
+img{
+  padding:0 15px;
+}
+}
+  // .part_06_info {
+  //   align-self: center;
 
-    .owl-part06 {
-      width: 500px;
-      padding-top: 150px;
+  //   .owl-part06 {
+  //     width: auto;
+  //     padding-top: 150px;
 
-      .item img {
-        width: 100px;
-      }
-    }
-
-  }
-
+  //     .item img {
+  //       width: 100px;
+  //     }
+  //   }
   .doctor_info {
     font-size: 50px;
 
@@ -351,7 +358,6 @@ text-align: center;
     }
 
   }
-
   .part06_arrow {
     margin-top: 50px;
 
@@ -369,9 +375,12 @@ text-align: center;
 
     }
   }
+  }
+
+ 
+ 
 
 
-}
 
 .part07_xl 
 {  background-image: url('/img/index_marble_background.png');
@@ -482,18 +491,20 @@ height: 80px;
    
     .part02_content {
 background-image: none;
-height: 200px;
-      display: flex;
-      justify-content: space-around;
-      position: relative;
-   .section_2{
-padding-bottom: 50px;
+background-color:grey;
+   .tab-pane{
+     position: absolute;
+bottom:10%;
+right:25%
+
    }
     }
-
+    .part02_xs_dots button{
+position:absolute;
+top:20%
+    }
 
     .tab-content{
-     
        span{
         color:black;
        }
@@ -665,10 +676,14 @@ padding-bottom: 50px;
 
   .part06 {
     padding-bottom: 20px;
- 
-    .part06_left img{
-padding:0 50px;
-    }
+    display: flex;
+    flex-direction: column;
+    .owl-part06{
+      height:auto;  
+      width: auto;
+    
+      }
+
     .part_06_info{
       text-align: center;
       padding-top: 50px;
