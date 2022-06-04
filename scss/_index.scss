@@ -643,11 +643,9 @@ z-index:999;
 
 
   .navbar_xs .nav {
-    overflow: scroll;
     background-color: #AD995B;
-   display: flex;
-flex-direction: row;
-z-index: 0;
+ 
+
     a,
     p {
      
@@ -655,7 +653,9 @@ z-index: 0;
       font-size: 15px;
       color: white;
       img{
-        height:50px;
+        height:30px;
+        display: flex;
+        justify-content: space-between;
       }
     }
   }
