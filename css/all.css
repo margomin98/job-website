@@ -437,11 +437,7 @@
   }
 
   .navbar_xs .nav {
-    overflow: scroll;
     background-color: #AD995B;
-    display: flex;
-    flex-direction: row;
-    z-index: 0;
   }
   .navbar_xs .nav a,
 .navbar_xs .nav p {
@@ -451,7 +447,9 @@
   }
   .navbar_xs .nav a img,
 .navbar_xs .nav p img {
-    height: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .part02_maintitle {
