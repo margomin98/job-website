@@ -1,9 +1,9 @@
-h1{
+h1 {
     font-weight: 800;
- letter-spacing: 5px;   
+    letter-spacing: 5px;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -11,5 +11,4 @@ img{
 html body {
     margin: 0;
     padding: 0;
-} 
-
+}

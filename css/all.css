@@ -43,21 +43,25 @@
   padding-top: 50px;
 }
 
-.part05_xl, .part05_xs {
+.part05_xl,
+.part05_xs {
   margin: 50px 0;
   padding: 0 10px;
   text-align: center;
 }
-.part05_xl .card-text, .part05_xs .card-text {
+.part05_xl .card-text,
+.part05_xs .card-text {
   font-size: 14px;
 }
-.part05_xl .part_05_more, .part05_xs .part_05_more {
+.part05_xl .part_05_more,
+.part05_xs .part_05_more {
   color: black;
   text-decoration: none;
   border: solid 1px black;
   padding: 5px 20px;
 }
-.part05_xl .card-text, .part05_xs .card-text {
+.part05_xl .card-text,
+.part05_xs .card-text {
   padding-bottom: 10%;
 }
 
@@ -182,7 +186,9 @@
     justify-content: space-around;
     position: relative;
   }
-  .part02_content .part02_dots, .part02_content button, .part02_content img {
+  .part02_content .part02_dots,
+.part02_content button,
+.part02_content img {
     display: flex;
     background-color: transparent;
     border: none;
@@ -321,12 +327,122 @@
   }
 }
 @media (min-width: 0px) and (max-width: 820px) {
+  .ham {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    text-align: center;
+    color: #AF965D;
+    padding: 20px;
+    font-size: 12px;
+    position: fixed;
+    z-index: 998;
+  }
+
+  .full_navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 999;
+  }
+  .full_navbar .close_menu {
+    padding: 17px 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .full_navbar .full_language {
+    align-self: center;
+  }
+  .full_navbar .full_language span {
+    padding: 0 10px;
+  }
+
+  .full_navbar_content .list-group-item {
+    background-color: #F2F4F4;
+    border: #D5D8DC solid 0.5px;
+    padding: 10px;
+    color: black;
+  }
+
+  .case_consult {
+    background-color: RGB(247, 247, 247);
+    padding: 15px 10px;
+  }
+
+  .tab-pane span {
+    color: black;
+  }
+  .tab-pane ul,
+.tab-pane li {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  .social {
+    background-color: white;
+  }
+  .social a img {
+    width: 50%;
+    margin: 10px 0 0 20px;
+  }
+
+  .top_navbar_content {
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  .top_navbar_content ul,
+.top_navbar_content li {
+    margin-left: 5px;
+    color: black;
+  }
+
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.7s a;
+    transition-font-size: 20px;
+    transition-color: black;
+  }
+
+  .overlay a:focus {
+    color: black;
+    background-color: #D6DBDF;
+    font-weight: 700;
+  }
+  .overlay a:focus ::after {
+    content: ">";
+    position: absolute;
+    /*make arrow stay in same line */
+    right: 20px;
+  }
+  .overlay a:focus p {
+    border-bottom: pink solid 3px;
+    width: 70px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+  }
+
   .navbar_xs .nav {
     margin-top: 40px;
     background-color: #AD995B;
     height: 80px;
   }
-  .navbar_xs .nav a, .navbar_xs .nav p {
+  .navbar_xs .nav a,
+.navbar_xs .nav p {
     padding-left: 10px;
     text-align: center;
     color: white;
@@ -393,115 +509,6 @@
     color: white;
   }
 
-  .tab-content span {
-    color: black;
-  }
-
-  .top_navbar {
-    margin: auto 0;
-    height: 120px;
-  }
-
-  .top_navbar_content {
-    height: 100%;
-    background-color: white;
-  }
-  .top_navbar_content ul, .top_navbar_content li {
-    margin-left: 20px;
-    padding: 10px 0;
-    color: grey;
-  }
-
-  aside {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease;
-    z-index: 2;
-  }
-
-  .open {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .case_consult {
-    width: 100%;
-    margin-top: 60px;
-    background-color: RGB(247, 247, 247);
-    padding: 15px 10px;
-  }
-
-  .outer-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 65px;
-    height: 65px;
-    cursor: pointer;
-  }
-
-  .toggle-overlay {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 65px;
-    z-index: 999;
-  }
-
-  .bar, .bar:after, .bar:before {
-    width: 65px;
-    height: 5px;
-    margin: 5px;
-    color: #fff;
-  }
-
-  .bar:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    background: RGB(161, 138, 87);
-    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .bar:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10px;
-    background: RGB(161, 138, 87);
-    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .bar {
-    position: relative;
-    transform: translateY(20px);
-    background: RGB(161, 138, 87);
-    transition: all 0ms 300ms;
-  }
-
-  .bar.animate:after {
-    top: 0;
-    transform: rotate(45deg);
-    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .bar.animate:before {
-    bottom: -10px;
-    transform: rotate(-45deg);
-    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .bar.animate {
-    background: rgba(255, 255, 255, 0);
-  }
-
   .social_xs {
     background-color: white;
     padding-left: 10px;
@@ -558,7 +565,6 @@
   .part06 .part06_arrow .part06_arrow_design {
     top: 70.5%;
     left: 40%;
-    z-index: 999;
   }
 
   .part07_xs {
