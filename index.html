@@ -31,186 +31,225 @@
 </head>
 
 <body>
+    <div id="myNav" class="overlay">
 
-    <div class="row g-0">
-        <!-- <div class='container-fluid '>
-        <div class="hamburger-menu toggle-overlay">
-          <div class="bar"></div>	
-       </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="full_navbar">
+                    <div class="navbar_close" style='display:flex'>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <p class='close_menu'>MENU</p>
+                    </div>
+
+                    <div class="full_language"><span>中文</span>
+                        <span>ENGLISH</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <img class='case_consult' src="https://i.ibb.co/VCDrVhF/index-ham-img.jpg" alt="case_consult">
+            </div>
+        </div>
+
+
+        <div class="row g-0 full_navbar_content">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="laser" data-bs-toggle="list" role="tab"
+                        href="#list-laser">
+                        <p>雷射光療</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="skin" data-bs-toggle="list" href="#list-skin"
+                        role="tab" aria-controls="skin">
+                        <p>肌膚緊致</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="face_care" data-bs-toggle="list"
+                        href="#list_face_care" role="tab" aria-controls="list-messages">
+                        <p>微整注射</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="face_surgery" data-bs-toggle="list"
+                        href="#list_face_surgery" role="tab" aria-controls="list-settings">
+                        <p style='width:100px'>臉部整形外科</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="body_surgery" data-bs-toggle="list"
+                        href="#list_body_surgery" role="tab" aria-controls="list-settings">
+                        <p style='width:100px'>身體整形外科</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="fat-remove" data-bs-toggle="list"
+                        href="#list_fat-remove" role="tab" aria-controls="list-settings">
+                        <p>體雕減脂</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="about" data-bs-toggle="list"
+                        href="#list_about" role="tab" aria-controls="list-settings">
+                        <p>關於我們</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="news" data-bs-toggle="list" href="#list_news"
+                        role="tab" aria-controls="list-settings">
+                        <p>最新消息</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="3D_surgery" data-bs-toggle="list"
+                        href="#list_3D_surgery" role="tab" aria-controls="list-settings">
+                        <p style='width:110px'>3D手術模擬</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="shop" data-bs-toggle="list" href="#list_shop"
+                        role="tab" aria-controls="list-settings">
+                        <p style='width:100px'>NC+保養品商城</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+
+                <div class="tab-content top_navbar_content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="list-laser" role="tabpanel"
+                        aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>探索皮秒</span></li>
+                            <li><span>飛梭雷射</span></li>
+                            <li><span>净膚雷射</span></li>
+                            <li><span>水飛梭</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list-skin" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>ULTHERAPY 超極限音波</span></li>
+                            <li><span>DOUBLO-S 倍提音波拉提</span></li>
+                            <li><span>Thermage FLX 鳳凰電波</span></li>
+                            <li><span>EXILIS 臉部電波</span></li>
+                            <li><span>氣脈衝</span></li>
+                            <li><span>立特拉音波</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list_face_care" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>玻尿酸</span></li>
+                            <li><span>AestherFill 精靈針</span></li>
+                            <li><span>肉毒桿菌素</span></li>
+                            <li><span>舒顔崒 Sculptra</span></li>
+                            <li><span>洢蓮絲 Ellanse</span></li>
+                            <li><span>水光注射</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list_face_surgery" role="tabpanel"
+                        aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>3D無痕雙眼皮</span></li>
+                            <li><span>4D微創隆鼻</span></li>
+                            <li><span>Goretex隆鼻</span></li>
+                            <li><span>自體補脂</span></li>
+                            <li><span>口内取脂</span></li>
+                            <li><span>開眼頭</span></li>
+                            <li><span>削骨手術</span></li>
+                            <li><span><span>眼底手術</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list_body_surgery" role="tabpanel"
+                        aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>Sebbin 柔滴隆乳</span></li>
+                            <li><span>Motiva 魔滴隆乳</span></li>
+                            <li><span>Mentor 曼陀隆乳</span></li>
+                            <li><span>自體脂肪隆乳</span></li>
+                            <li><span>提乳手術</span></li>
+                            <li><span>乳頭乳暈美型術</span></li>
+                            <li><span>平胸縮胸手術</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list_fat=remove" role="tabpanel"
+                        aria-labelledby="list-settings-list">
+                        <ul>
+                            <li>EXILIS ELITE 超V電波體雕</span></li>
+                            <li><span>威塑抽脂</span></li>
+                            <li><span>黃金電漿抽脂</span></li>
+                            <li><span>Z塑酷 冷凍減脂</span></li>
+                            <li><span>消脂針</span></li>
+                            <li><span>增肌減脂（動磁波）</span></li>
+                            <li><span>瘦瘦筆</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list_about" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>關於我們</span></li>
+                            <li><span>醫師團隊</span></li>
+                            <li><span>環境介紹</span></li>
+                            <li><span>交通資訊</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list_news" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ul>
+                            <li><span>素人案例分享</span></li>
+
+                            <li><span>醫美新知</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 social">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/XVbyvTx/yt-xs.png" alt="yt-xs"></a>
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/xDR21SR/fb-xs.png" alt="fb-xs"></a>
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/1ZzdZdP/ig-xs.png" alt="ig-xs"></a>
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/g9G8LCm/line-xs.png" alt="line-xs"></a>
+            </div>
+
+
+        </div>
+
     </div>
+
+
     <div class="container-fluid">
-   
+        <div class="row">
+            <div class="ham">
+                <div class="menu_select"> <img src="./img/ham_icon.png" onclick="openNav()" alt="menu">
+                    <br>
+                    <span>選單</span></div>
+                <div class="menu_logo"><img src="./img/index_logo.png" alt="nice_clinic"></div>
+                <div class="menu_call"> <img src="./img/ham_call.png" alt="call"><br>
+                    <span>立即聯絡</span></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row g-0">
        
-       <aside>
-      <div class="outer-close toggle-overlay">
-       <a class="close"><span></span></a>
-     </div>
-        
-         <img class='case_consult' src="https://i.ibb.co/VCDrVhF/index-ham-img.jpg" alt="case_consult">
-   
-        
-          <div class="row g-0">
-     <div class="col-4">
-       <div class="list-group" id="list-tab" role="tablist">
-         <a class="list-group-item list-group-item-action active" id="laser" data-bs-toggle="list" role="tab" href="#list-laser" >雷射光療</a>
-         <a class="list-group-item list-group-item-action" id="skin" data-bs-toggle="list" href="#list-skin" role="tab" aria-controls="skin">肌膚緊致</a>
-         <a class="list-group-item list-group-item-action" id="face_care" data-bs-toggle="list" href="#list_face_care" role="tab" aria-controls="list-messages">微整注射</a>
-         <a class="list-group-item list-group-item-action" id="face_surgery" data-bs-toggle="list" href="#list_face_surgery" role="tab" aria-controls="list-settings">臉部整形外科</a>
-               <a class="list-group-item list-group-item-action" id="body_surgery" data-bs-toggle="list" href="#list_body_surgery" role="tab" aria-controls="list-settings">身體整形外科</a>
-               <a class="list-group-item list-group-item-action" id="fat-remove" data-bs-toggle="list" href="#list_fat_remove" role="tab" aria-controls="list-settings">體雕減脂</a>
-             <a class="list-group-item list-group-item-action" id="about" data-bs-toggle="list" href="#list_about" role="tab" aria-controls="list-settings">關於我們</a>
-             <a class="list-group-item list-group-item-action" id="news" data-bs-toggle="list" href="#list_news" role="tab" aria-controls="list-settings">最新消息</a>
-             <a class="list-group-item list-group-item-action" id="3D_surgery" data-bs-toggle="list" href="#list_3D_surgery" role="tab" aria-controls="list-settings">3D手術模擬</a>
-             <a class="list-group-item list-group-item-action" id="shop" data-bs-toggle="list" href="#list_shop" role="tab" aria-controls="list-settings">NC+保養品商城</a>
-       </div>
-     </div>
-     <div class="col">
-      <div class="tab-content top_navbar_content" id="nav-tabContent">
-      
-     <div class="tab-pane fade show active" id="list-laser" role="tabpanel" aria-labelledby="list-settings-list">
-       <ul>
-     <li><span>探索皮秒</span></li>
-           <li><span>飛梭雷射</span></li>
-           <li><span>净膚雷射</span></li>
-           <li><span>水飛梭</span></li>
-   
-   </ul></div> 
-        <div class="tab-pane fade" id="list-skin" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-     <li><span>ULTHERAPY 超極限音波</span></li>
-          <li><span>DOUBLO-S 倍提音波拉提</span></li>
-          <li><span>Thermage FLX 鳳凰電波</span></li>
-          <li><span>EXILIS 臉部電波</span></li>
-          <li><span>氣脈衝</span></li>
-          <li><span>立特拉音波</span></li>
-   
-   </ul></div> 
-        <div class="tab-pane fade" id="list_face_care" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-          <li><span>玻尿酸</span></li>
-           <li><span>AestherFill 精靈針</span></li>
-           <li><span>肉毒桿菌素</span></li>
-           <li><span>舒顔崒 Sculptra</span></li>
-           <li><span>洢蓮絲 Ellanse</span></li>
-           <li><span>水光注射</span></li>
-   
-   </ul></div>  <div class="tab-pane fade" id="list_face_surgery" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-     <li><span>3D無痕雙眼皮</span></li>
-          <li><span>4D微創隆鼻</span></li>
-          <li><span>Goretex隆鼻</span></li>
-          <li><span>自體補脂</span></li>
-          <li><span>口内取脂</span></li>
-          <li><span>開眼頭</span></li>
-   <li><span>削骨手術</span></li>
-   <li><span>眼底手術<span></li>
-   </ul></div> 
-        <div class="tab-pane fade" id="list_body_surgery" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-     <li><span>Sebbin 柔滴隆乳</span></li>
-          <li><span>Motiva 魔滴隆乳</span></li>
-          <li><span>Mentor 曼陀隆乳</span></li>
-          <li><span>自體脂肪隆乳</span></li>
-          <li><span>提乳手術</span></li>
-            <li><span>乳頭乳暈美型術</span></li>
-            <li><span>平胸縮胸手術</span></li>
-   
-   </ul></div>  <div class="tab-pane fade" id="list_fat_remove" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-     <li><span>EXILIS ELITE 超V電波體雕</span></li>
-          <li><span>威塑抽脂</span></li>
-          <li><span>黃金電漿抽脂</span></li>
-          <li><span>Z塑酷 冷凍減脂</span></li>
-          <li><span>消脂針</span></li>
-          <li><span>增肌減脂（動磁波）</span></li>
-         <li><span>瘦瘦筆</span></li>
-   
-   </ul></div>  <div class="tab-pane fade" id="list_about" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-     <li><span>關於我們</span></li>
-         <li><span>醫師團隊</span></li>
-         <li><span>環境介紹</span></li>
-         <li><span>交通資訊</span></li>
-   
-   </ul></div>  <div class="tab-pane fade" id="list_news" role="tabpanel" aria-labelledby="list-settings-list"><ul>
-     <li><span>素人案例分享</span></li>
-   
-          <li><span>醫美新知</span></li>
-   </ul></div>  
-       </div>
-     </div>
-         <div class="col-1 social_xs">
-           <a href="https://imgbb.com/"><img src="https://i.ibb.co/XVbyvTx/yt-xs.png" alt="yt-xs" border="0"></a>
-   <a href="https://imgbb.com/"><img src="https://i.ibb.co/xDR21SR/fb-xs.png" alt="fb-xs" border="0"></a>
-   <a href="https://imgbb.com/"><img src="https://i.ibb.co/1ZzdZdP/ig-xs.png" alt="ig-xs" border="0"></a>
-   <a href="https://imgbb.com/"><img src="https://i.ibb.co/g9G8LCm/line-xs.png" alt="line-xs" border="0"></a>
-         </div>
-   </div>
-        
-         
-         
-         
-   </aside>
-      
-     </div>
-    -->
-<div class="container-fluid">
-    <div class="navbar_xs d-xs-block d-md-block d-xl-none fixed-bottom">
-
-       
-        <nav class="nav  ">
-        
-              <a class="nav-link" href="#">
-                    <img src="./img/bottom_icon.png" alt="Call Us">
-                <p>電話咨詢</p></a>
-           
-              <a class="nav-link" href="#">    <img src="./img/bottom_icon.png" alt="Line Consult">
-                <p>LINE 咨詢</p></a>
-
-              <a class="nav-link" href="#"><img src="./img/bottom_icon.png" alt="Case Page">
-                <p>素人案例</p></a>
-
-              <a class="nav-link disabled">  <img src="./img/bottom_icon.png" alt="Dr Team">
-                <p>醫師團隊</p></a>
-        
-</nav>
-</div>
-</div>
+        <div class="container-fluid">
+            <div class="navbar_xs d-xs-block d-md-block d-xl-none fixed-bottom">
 
 
+                <nav class="nav  ">
 
+                    <a class="nav-link" href="#">
+                        <img src="./img/bottom_navbar_call.png" alt="Call Us">
+                        <p>電話咨詢</p>
+                    </a>
 
+                    <a class="nav-link" href="#"> <img src="./img/bottom_navbar_line.png" alt="Line Consult">
+                        <p>LINE 咨詢</p>
+                    </a>
 
-        <!-- <div class="top-navbar"> 
-                  <div id="myNav" class="overlay d-block d-md-none d-xl-none">
-               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-               <div class="overlay-content">
-                <a class="active" href="#">雷射光療</a>
-                <a href="#">肌膚緊致</a>
-               <a href="#">雕塑減脂</a>
-               <a href="#">臉部整型外科</a>
-               <a href="#">身體整型外科</a>
-               <a href="#">最新消息</a>
-               <a href="#">3D手術模擬</a>
-               <a href="#">NC+保養品商城</a>
-               </div>
-           </div>
-            </div>  -->
+                    <a class="nav-link" href="#"><img src="./img/bottom_navbar_case.png" alt="Case Page">
+                        <p>素人案例</p>
+                    </a>
 
+                    <a class="nav-link" href="#"> <img src="./img/bottom_navbar_team.png" alt="Dr Team">
+                        <p>醫師團隊</p>
+                    </a>
 
-        <!-- <div class="container-fluid">
-                <div class="row top_navbar_ham d-block d-md-none d-xl-none">
-         
-                        <div class="top_navbar_content">
-                            <span  style="font-size:10px"
-                            onclick="openNav()">&#9776
-                      選單
-                        </span>
-                        </div>
-                       
-                    <div class="logo_xs">
-                        <img src="./img/index_logo.png" alt="Nice Clinic Logo">
-                    </div>
-            
-                    <div class="contact">
-                        <img src="./img/index_call_icon.png" alt="">
-                    </div>
-                    </div>
-                </div>  -->
+                </nav>
+            </div>
+        </div>
 
 
 
@@ -960,7 +999,7 @@
                         </div>
 
                     </div>
-            
+
 
                     <div class="container-fluid part06 d-xl-flex">
 
@@ -968,7 +1007,7 @@
                             <img src="./img/index_doctor_01.png" alt="">
                         </div>
 
-                        <div class="part_06_info" >
+                        <div class="part_06_info">
                             <h1>NICE CLINIC 隆乳權威</h1>
                             <div class="doctor_info">
                                 <span>廖 國 鈞</span>
@@ -1951,25 +1990,25 @@
             owl.trigger('stop.owl.autoplay')
         })
     </script>
-  <script>
-    $('.slideshow_top_xs').owlCarousel({
-        items: 1,
-        dots: false,
-        loop: true,
-        margin: 0,
-        autoplay: true,
+    <script>
+        $('.slideshow_top_xs').owlCarousel({
+            items: 1,
+            dots: false,
+            loop: true,
+            margin: 0,
+            autoplay: true,
 
-        autoplayTimeout: 2500,
-        autoplayHoverPause: false,
-        mouseDrag: false
-    });
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [2500])
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
-</script>
+            autoplayTimeout: 2500,
+            autoplayHoverPause: false,
+            mouseDrag: false
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [2500])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
     <script>
         $('.owl-one').owlCarousel({
             items: 4,
@@ -2064,6 +2103,18 @@
                 }
             }
         });
+    </script>
+
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
     </script>
     <script src="./js/index_slide_01.js"></script>
     <script src="./js/index_slide_02.js"></script>
