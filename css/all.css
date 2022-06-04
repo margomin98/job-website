@@ -437,9 +437,11 @@
   }
 
   .navbar_xs .nav {
+    overflow: scroll;
     background-color: #AD995B;
     display: flex;
     flex-direction: row;
+    z-index: 0;
   }
   .navbar_xs .nav a,
 .navbar_xs .nav p {

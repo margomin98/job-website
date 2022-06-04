@@ -528,7 +528,7 @@ z-index: 998;
     display: flex;
     justify-content: space-between;
 height: 100%;
-z-index: 999;
+z-index:999;
     .close_menu {
   
       padding:17px 0 0 10px;
@@ -643,10 +643,11 @@ z-index: 999;
 
 
   .navbar_xs .nav {
-   
+    overflow: scroll;
     background-color: #AD995B;
    display: flex;
 flex-direction: row;
+z-index: 0;
     a,
     p {
      
