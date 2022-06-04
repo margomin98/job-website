@@ -1,4 +1,116 @@
-// .top_navbar{
+.part02 {
+  margin: 50px 0;
+
+  .part02_maintitle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+  }
+}
+
+
+.part04 {
+
+  .left {
+    background-color: #F8F8F8;
+
+  }
+  
+  .more {
+    padding: 10px 30PX;
+    border-radius: 30px;
+    margin-top: 20px;
+    width:150px;
+    background-color: transparent;
+  }
+.part04_left_content {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+align-items: center;
+padding-top:15%;
+text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .fb {
+    margin-right: 20px;
+  }
+}
+.part04_dots button {
+
+  background-color: transparent;
+  border: none;
+
+
+}
+
+
+
+.part04_brand p {
+  color: #9a9a9a;
+  font-weight: 800;
+  padding-top: 50px
+}
+}
+
+
+
+.part05_xl,.part05_xs {
+  margin: 50px 0;
+  padding:0 10px;
+  text-align: center;
+
+  .card-text{
+    font-size:14px
+  }
+
+  .part_05_more {
+    color: black;
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 5px 20px
+  }
+
+  .card-text {
+    padding-bottom: 10%;
+  }
+}
+
+.part06{
+  background-image: url('/img/index_part06_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .part06_arrow_design{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 85px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  .doctor_info {
+    font-size: 50px;
+
+    .doctor {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+  }
+
+}
+
+
+@media (min-width: 1199.98px){
+  // .top_navbar{
 //   z-index: 999;
 //   .closebtn{
 //    text-align-last: left;
@@ -143,15 +255,7 @@ padding-top: 50px;
 
 
 
-.part02 {
-  margin: 50px 0;
 
-  .part02_maintitle {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 3px solid black;
-  }
-}
 
 
 
@@ -220,7 +324,7 @@ padding-top: 50px;
 
 .part03 {
   text-align: center;
-  margin: 50px 0;
+
  
 .part03_title{
   padding-bottom: 20px;
@@ -249,129 +353,40 @@ padding-top: 50px;
 
 
 
-.part04 {
-
-  .left {
-    background-color: #F8F8F8;
-
-  }
-  
-  .more {
-    padding: 10px 30PX;
-    border-radius: 30px;
-    margin-top: 20px;
-    width:150px;
-    background-color: transparent;
-  }
-.part04_left_content {
- display: flex;
- justify-content: center;
- flex-direction: column;
-align-items: center;
-padding-top:15%;
-text-align: center;
-}
-}
 
 
 
 
-.part04_brand p {
-  color: #9a9a9a;
-  font-weight: 800;
-  padding-top: 50px
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-
-  .fb {
-    margin-right: 20px;
-  }
-}
-
-.part04_dots button {
-
-  background-color: transparent;
-  border: none;
 
 
-}
-
-.part05_xl,.part05_xs {
-  margin: 50px 0;
-  text-align: center;
-
-  .card-text{
-    font-size:14px
-  }
-
-  .part_05_more {
-    color: black;
-    text-decoration: none;
-    border: solid 1px black;
-    padding: 5px 20px
-  }
-
-  .card-text {
-    padding-bottom: 10%;
-  }
-}
 
 .part06 {
-  background-image: url('/img/index_part06_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+
 display: flex;
 justify-content:center;
 .part_06_info{
   text-align: left;
+  align-self: center;
 }
 
 .owl-part06{
 height: 200px;  
 width: 500px;
+padding-top: 100px;
 img{
   padding:0 15px;
 }
+
+
 }
-  // .part_06_info {
-  //   align-self: center;
 
-  //   .owl-part06 {
-  //     width: auto;
-  //     padding-top: 150px;
 
-  //     .item img {
-  //       width: 100px;
-  //     }
-  //   }
-  .doctor_info {
-    font-size: 50px;
-
-    .doctor {
-      font-size: 20px;
-      letter-spacing: 2px;
-    }
-
-  }
   .part06_arrow {
     margin-top: 50px;
 
     .part06_arrow_design {
-      position: absolute;
-      bottom: 43%;
-      left: 52%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 85px;
-      width: 85px;
-      border: 1px solid black;
-      border-radius: 50%;
+      bottom: 40.5%;
+      left: 56%   
 
     }
   }
@@ -474,9 +489,33 @@ height: 80px;
     font-size:15px;
   }
 }
+}
+@media (min-width: 0px) and (max-width: 820px)  {
 
 
-@media (max-width: 768px) {
+  .navbar_xs .nav{
+    margin-top: 40px;
+  background-color: #AD995B;
+  height:80px;
+
+ a,p{
+  padding-left: 10px;
+   text-align: center;
+   color:white
+ }
+}
+
+
+
+  .part02_maintitle {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    .case{
+padding-top: 10px;
+    }
+  }
 
   .list-group-item {
     border-top:none;
@@ -503,6 +542,36 @@ right:25%
 position:absolute;
 top:20%
     }
+    .part03 {
+      text-align: center;
+      margin: 50px 0;
+     
+    .part03_title{
+      padding-bottom: 20px;
+    }
+      .part03_select {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    
+        li a {
+          background-color: grey;
+          border-radius: 15px;
+          width: 70px;
+          margin:0 10px;
+          color: white;
+        }
+    
+        a:hover {
+          background-color: rgb(239, 231, 185);
+          color: white
+        }
+    
+      }
+    }
+    
+
+
 
     .tab-content{
        span{
@@ -671,16 +740,17 @@ top:20%
   }
 
   .part05_xs{
-    padding:0 20px
+  margin:20px 0;
   }
 
   .part06 {
-    padding-bottom: 20px;
+    padding:20px;
     display: flex;
     flex-direction: column;
+
     .owl-part06{
-      height:auto;  
-      width: auto;
+      margin-top: 20px;
+
     
       }
 
@@ -691,10 +761,11 @@ top:20%
     }
     .part06_arrow {
     padding-right:90px;
+    margin:100px 0;
       .part06_arrow_design {
-        position: absolute;
-      top:66%;
+      top:70.5%;
         left:40%;
+        z-index: 999;
   
   
       }
@@ -756,6 +827,7 @@ top:20%
   .footer {
     text-align: center;
     padding:20px 0;
+    margin-bottom:100px;
     .footer_dot{
       display: none;
     }
