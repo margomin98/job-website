@@ -614,10 +614,6 @@ z-index: 999;
     }
   }
 
-
-
-
-
   .overlay a:focus {
     color: black;
     background-color: #D6DBDF;
@@ -647,15 +643,19 @@ z-index: 999;
 
 
   .navbar_xs .nav {
-    margin-top: 40px;
+   
     background-color: #AD995B;
-    height: 80px;
-
+   display: flex;
+flex-direction: row;
     a,
     p {
-      padding-left: 10px;
+     
       text-align: center;
-      color: white
+      font-size: 15px;
+      color: white;
+      img{
+        height:50px;
+      }
     }
   }
 

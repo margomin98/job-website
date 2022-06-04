@@ -437,15 +437,19 @@
   }
 
   .navbar_xs .nav {
-    margin-top: 40px;
     background-color: #AD995B;
-    height: 80px;
+    display: flex;
+    flex-direction: row;
   }
   .navbar_xs .nav a,
 .navbar_xs .nav p {
-    padding-left: 10px;
     text-align: center;
+    font-size: 15px;
     color: white;
+  }
+  .navbar_xs .nav a img,
+.navbar_xs .nav p img {
+    height: 50px;
   }
 
   .part02_maintitle {
