@@ -1,3 +1,44 @@
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: white;
+  overflow-y: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+.overlay a {
+  font-size: 20px;
+  color: black;
+}
+
+.overlay a:focus {
+  color: black;
+  background-color: #D6DBDF;
+  font-weight: 700;
+}
+.overlay a:focus ::after {
+  content: ">";
+  position: absolute;
+  /*make arrow stay in same line */
+  right: 20px;
+}
+.overlay a:focus p {
+  border-bottom: pink solid 3px;
+  width: 70px;
+}
+
+.overlay .closebtn {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+
 .part02 {
   margin: 50px 0;
 }
@@ -5,6 +46,30 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 3px solid black;
+}
+
+.part03 {
+  text-align: center;
+}
+.part03 .part03_title {
+  padding-bottom: 20px;
+}
+.part03 ul li {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.part03 ul li .nav-link {
+  background-color: grey;
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 20px;
+  width: 100px;
+  color: white;
+}
+.part03 ul li .nav-link.active {
+  background-color: rgb(239, 231, 185);
+  color: white;
 }
 
 .part04 .left {
@@ -146,27 +211,6 @@
     padding: 30px 0;
   }
 
-  .overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: 0.5s;
-  }
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: pink;
-    display: block;
-    transition: 0.3s;
-  }
-  .overlay a :hover a:focus {
-    color: #f1f1f1;
-  }
-
   .overlay a {
     font-size: 30px;
     display: flex;
@@ -205,30 +249,6 @@
 
   .carousel {
     width: 500px;
-  }
-
-  .part03 {
-    text-align: center;
-  }
-  .part03 .part03_title {
-    padding-bottom: 20px;
-  }
-  .part03 .part03_select {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-  }
-  .part03 .part03_select li a {
-    background-color: grey;
-    padding: 5px;
-    margin: 0 10px;
-    border-radius: 20px;
-    width: 100px;
-    color: white;
-  }
-  .part03 .part03_select a:hover {
-    background-color: rgb(239, 231, 185);
-    color: white;
   }
 
   .part06 {
@@ -398,44 +418,6 @@
     color: black;
   }
 
-  .overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    /* Stay in place */
-    z-index: 999;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.7s a;
-    transition-font-size: 20px;
-    transition-color: black;
-  }
-
-  .overlay a:focus {
-    color: black;
-    background-color: #D6DBDF;
-    font-weight: 700;
-  }
-  .overlay a:focus ::after {
-    content: ">";
-    position: absolute;
-    /*make arrow stay in same line */
-    right: 20px;
-  }
-  .overlay a:focus p {
-    border-bottom: pink solid 3px;
-    width: 70px;
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    text-decoration: none;
-    color: black;
-  }
-
   .navbar_xs .nav {
     background-color: #AD995B;
   }
@@ -489,28 +471,13 @@
     top: 20%;
   }
 
-  .part03 {
-    text-align: center;
-    margin: 50px 0;
+  .part03 ul li {
+    padding-bottom: 30px;
   }
-  .part03 .part03_title {
-    padding-bottom: 20px;
-  }
-  .part03 .part03_select {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-  }
-  .part03 .part03_select li a {
-    background-color: grey;
-    border-radius: 15px;
-    width: 70px;
-    margin: 0 10px;
-    color: white;
-  }
-  .part03 .part03_select a:hover {
-    background-color: rgb(239, 231, 185);
-    color: white;
+  .part03 ul li .nav-link {
+    padding: 5px;
+    margin: 0 5px;
+    width: 60px;
   }
 
   .social_xs {

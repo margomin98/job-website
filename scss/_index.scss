@@ -1,3 +1,46 @@
+
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; 
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    a {
+      font-size: 20px;
+      color: black;
+    }
+  }
+
+  .overlay a:focus {
+    color: black;
+    background-color: #D6DBDF;
+    font-weight: 700;
+
+    ::after {
+      content: '>';
+      position: absolute; /*make arrow stay in same line */
+      right: 20px
+    }
+
+    p {
+      border-bottom: pink solid 3px;
+      width: 70px;
+
+    }
+
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+  text-decoration: none;
+  color: black;
+
+  }
+
 .part02 {
   margin: 50px 0;
 
@@ -5,6 +48,36 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid black;
+  }
+}
+
+.part03 {
+  text-align: center;
+  
+  .part03_title {
+    padding-bottom: 20px;
+  }
+
+  ul li{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    .nav-link {
+      background-color: grey;
+      padding: 5px;
+      margin: 0 10px;
+      border-radius: 20px;
+      width: 100px;
+      color: white;
+    }
+
+   //change color when selected //
+    .nav-link.active{
+      background-color: rgb(239, 231, 185);
+      color: white
+    }
+
   }
 }
 
@@ -208,32 +281,7 @@
     padding: 30px 0
   }
 
-  .overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-
-    transition: 0.5s;
-
-    a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: pink;
-      display: block;
-      transition: 0.3s;
-
-      :hover a:focus {
-        color: #f1f1f1;
-      }
-    }
-
-
-  }
+ 
 
 
 
@@ -331,37 +379,6 @@
   // 	 padding-right: 0%;
   // 	}
   //   }
-
-  .part03 {
-    text-align: center;
-
-
-    .part03_title {
-      padding-bottom: 20px;
-    }
-
-    .part03_select {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 50px;
-
-      li a {
-        background-color: grey;
-        padding: 5px;
-        margin: 0 10px;
-        border-radius: 20px;
-        width: 100px;
-        color: white;
-      }
-
-      a:hover {
-        background-color: rgb(239, 231, 185);
-        color: white
-      }
-
-    }
-  }
-
 
 
 
@@ -596,53 +613,11 @@ z-index:999;
   }
 
 
-  .overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    /* Stay in place */
-    z-index: 999;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.7s 
-    a {
-      font-size: 20px;
-      color: black;
-    }
-  }
-
-  .overlay a:focus {
-    color: black;
-    background-color: #D6DBDF;
-    font-weight: 700;
-
-    ::after {
-      content: '>';
-      position: absolute; /*make arrow stay in same line */
-      right: 20px
-    }
-
-    p {
-      border-bottom: pink solid 3px;
-      width: 70px;
-
-    }
-
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-  text-decoration: none;
-  color: black;
-
-  }
 
 
 
   .navbar_xs .nav {
+
     background-color: #AD995B;
  
 
@@ -702,35 +677,17 @@ z-index:999;
     top: 20%
   }
 
-  .part03 {
-    text-align: center;
-    margin: 50px 0;
-
-    .part03_title {
-      padding-bottom: 20px;
-    }
-
-    .part03_select {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 50px;
-
-      li a {
-        background-color: grey;
-        border-radius: 15px;
-        width: 70px;
-        margin: 0 10px;
-        color: white;
-      }
-
-      a:hover {
-        background-color: rgb(239, 231, 185);
-        color: white
-      }
-
-    }
+  .part03
+ { ul li{
+  padding-bottom: 30px;
+    .nav-link {
+      padding: 5px;
+      margin: 0 5px;
+        width: 60px;
   }
 
+  }
+}
 
 
 
